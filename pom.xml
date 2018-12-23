@@ -20,6 +20,12 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.47</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.2.3</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -37,7 +43,7 @@
                     <!--修复 打包 没有主清单属性的时候-->
                     <archive>
                         <manifest>
-                            <mainClass>com.yonhu.task.ZhiBanTask</mainClass>
+                            <mainClass>com.yonhu.schedule.task.ZhiBanTask</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
